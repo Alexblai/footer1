@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'poppins',sans-serif;
+      box-sizing: border-box;
+    }
+    body{
+      background: #eef8ff;
+      background: rgb(231, 230, 230);
+    }
+    footer{
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(to right, #00093c, #2d0b00);
+      color: #fff;
+      padding: 50px 0 30px;
+      border-top-left-radius: 125px;
+      font-size: 13px;
+      line-height: 20px;
+      
+    }
+    .row{
+      width: 85%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .col{
+      flex-basis: 25%;
+      padding: 10px;
+    }
+    .col:nth-child(2), .col:nth-child(3){
+      flex-basis: 15%;
+    }
+    .logo{
+      width: 80px;
+      margin-bottom: 20px;
+    }
+    .col h3{
+      width: fit-content;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .col h4{
+      cursor: pointer;
+    }
+    .email-id{
+      width: fit-content;
+      border-bottom: 1px solid #ccc;
+      margin: 20px 0;
+      cursor: pointer;
+    }
+    ul li{
+      list-style: none;
+      margin-bottom: 12px;
+    }
+    ul li a{
+      text-decoration: none;
+      color: #fff;
+    }
+    form{
+      padding-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 50px;
+    }
+    form .far{
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    form input{
+      width: 100%;
+      background: transparent;
+      color: #ccc;
+      border: 0;
+      outline: none;
+    }
+    form button{
+      background: transparent;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+    }
+    form button .fas{
+      font-size: 16px;
+      color: #ccc;
+    }
+    hr{
+      width: 90%;
+      border: 0;
+      border-bottom: 1px solid #ccc;
+      margin: 20PX auto;
+    }
+    .copyright{
+      text-align: center;
+
+    }
+    .underline{
+      width: 100%;
+      height: 5px;
+      background: #767676;
+      border-radius: 3PX;
+      position: absolute;
+      top: 25PX;
+      left: 0;
+      overflow: hidden;
+    }
+    .underline span{
+      width: 15PX;
+      height: 100%;
+      background: #fff;
+      border-radius: 3PX;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving{
+      0%{
+        left: -20PX;
+      }
+      100%{
+        left: 100%;
+      }
+    }
+    @media (max-widht:700px){
+      footer{
+        bottom: unset;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <footer>
+    <div class="row">
+      <div class="col">
+        <img src="logo.png" class="logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at minima enim.</p>
+      </div>
+      <div class="col">
+        <h3>Office <div class="underline"><span></span></div></h3>
+        <p>Truc ouf</p>
+        <p>kbdjheebee, zuzueueehhe</p>
+        <p>ldnceibceio, zkcnnzk, izebfjdkd</p>
+        <p class="email-id">trucouf@gmail.com</p>
+        <h4>+229 66 81 34 16</h4>
+      </div>
+      <div class="col">
+        <h3>Links <div class="underline"><span></span></div></h3>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Newsletter <div class="underline"><span></span></div></h3>
+        <form>
+          <i class="far fa-envelope"></i>
+          <input type="email" placeholder="Entrer votre email" required>
+          <button type="submit"><i class="far fa-arrow-right-right"></i></button>
+        </form>
+        <div class="social-icons">
+          
+
+        </div>
+      </div>
+
+    </div>
+    <hr>
+    <p class="copyright"> Truc de ouf 2023 @ copyright</p>
+  </footer>
+</body>
+</html>
